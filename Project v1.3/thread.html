@@ -1,0 +1,36 @@
+<!--
+==========================================================================================
+Author: Jandre Badenhorst                                                                 |
+File name: thread.html                                                                    |
+Date:                                                                                     |
+Description: page for showing comments                                                    |
+==========================================================================================
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="stylec.css">
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Comment</th>
+          <th>time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <th scope="row">Comment ID</th>
+            <td>Name</td>
+            <td>Comment</td>
+            <td><?php if(isset($r['status']) & !empty($r['status'])){echo $r['status'];}else{echo "NA";} ?></td>
+<td><a href="editcomment.php?id=<?php echo $r['id']; ?>">Edit</a> <a href="commentstatus.php?id=<?php echo $r['id']; ?>&status=publish">App</a> <a href="commentstatus.php?id=<?php echo $r['id']; ?>&status=draft">Dis</a> <a href="delcomment.php?id=<?php echo $r['id']; ?>">Del</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

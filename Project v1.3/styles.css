@@ -1,0 +1,27 @@
+/*
+==========================================================================================
+Author: Jandre Badenhorst                                                                 |
+File name: styles.css                                                                      |
+Date:                                                                                     |
+Description: stylesheet for headings                                                      |
+==========================================================================================
+*/
+body {
+  padding-top:120px;
+  font-family:Arial;
+}
+.container {
+  width:300px;
+  margin:0 auto;
+}
+
+a:link, a:visited {
+  color:slateGrey;
+  text_decoration:none;
+  border-bottom:1px dotted slateGrey;
+}
+
+a:hover {
+  color:#444;
+  border-bottom-color:#444;
+}

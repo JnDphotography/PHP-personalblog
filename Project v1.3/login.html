@@ -1,0 +1,41 @@
+<!--
+==========================================================================================
+Author: Jandre Badenhorst                                                                 |
+File name: login.html                                                                     |
+Date:                                                                                     |
+Description: if you are already a user, this page wil show where you can                  |
+enter you credentials                                                                     |
+==========================================================================================
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="glow.css"/>
+  </head>
+  <div class="header">
+    <h1>Login</h1>
+  </div>
+  <form  action="login.php" method="post">
+    <body>
+      <fieldset>
+        <legend>Login</legend>
+      <table>
+        <tr>
+          <td><input type="text" name="email" placeholder="Email"> </td>
+        </tr>
+        <tr>
+          <td><input type="password" name="password" placeholder="Password"</td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="changepw" value="change password" formaction="update/updatepw.html"></td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="submit" value="Login"> </td>
+        </tr>
+      </table>
+      </fieldset>
+    </body>
+  </form>
+</html>

@@ -1,0 +1,54 @@
+<!--
+==========================================================================================
+Author: Jandre Badenhorst                                                                 |
+File name: register.php                                                                   |
+Date:                                                                                     |
+Description: The registration form is on this page                                        |
+==========================================================================================
+-->
+
+<!--Used to create the registration form-->
+<html>
+  <head>
+    <title>Register</title>
+    <link rel="stylesheet" href="glow.css"/>
+  </head>
+  <body>
+      <form action="add.php"  method="post">
+        <fieldset>
+          <legend>REGISTER</legend>
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" name='name' class="textinput" placeholder="Name"/></td>
+          </tr>
+          <tr>
+            <td>Surname:</td>
+            <td><input type="text" name='surname' class="textinput" placeholder="Surname"/></td>
+          </tr>
+          <tr>
+            <td>Date of Birth:</td>
+            <td><input type="date" name='dob'placeholder="Date of Birth" /></td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td><input type="email" name='email' placeholder="Email" /></td>
+          </tr>
+          <tr>
+            <td>Cell:</td>
+            <td><input type="text" name='cell' placeholder="cell" /></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td><input type="radio" name='radioButton' value="Male"/><b color="white">Male</b> </td>
+            <td><input type="radio" name='radioButton' value="Female"/><b color="white"> Female</b></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="Submit" name="register_btn" value="Register "/></td>
+          </tr>
+        </table>
+      </fieldset>
+      </form>
+  </body>
+</html>

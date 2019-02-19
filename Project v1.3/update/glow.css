@@ -1,0 +1,193 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #000;
+
+}
+
+
+/*Styling for button*/
+ input[type = "submit"], input[type = "file"], input[type = "button"], a{
+  top: 50%;
+  left: 50%;
+  width: 100px auto;
+  height: 30px auto;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  border: none;
+  border-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4,#f441a5, #ffeb3b,#03a9f4);
+  border-radius: 12px;
+  background-size: 400%;
+
+}
+
+ input[type = "submit"]:hover, input[type = "button"]:hover
+{
+  cursor: pointer;
+  animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position:0%;
+    }
+    100%
+    {
+        background-position:400%;
+    }
+}
+
+ input[type = "submit"]:before, input[type = "button"]:before
+{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4,#f441a5, #ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  opacity: 0;
+  transition: 0.5s;
+  filter: blur(40px);
+
+}
+
+ input[type = "submit"]:hover:before, input[type = "button"]:hover:before
+{
+  filter: blur(200px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+
+
+/*Styling for textfields*/
+ input[type = "text"], input[type = "password"], input[type = "date"], input[type = "email"] {
+  border:0;
+  background:none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+ input[type = "text"]:hover, input[type = "password"]:hover, input[type = "date"]:hover, input[type = "email"]:hover{
+    width: 280px;
+    border-color: #2ecc71;
+}
+ input[type = "text"]:focus, input[type = "password"]:focus, input[type = "date"]:focus, input[type = "email"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+ fieldset{
+  width: 300px;
+  margin: 0px auto;
+  color: white;
+  text-transform:uppercase;
+  font-family: sans-serif;
+  border-radius: 12px;
+  border-color: #03a9f4;
+  border-width: 2px;
+
+}
+
+ legend{
+
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  background: linear-gradient(90deg, #03a9f4,#f441a5, #ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-radius: 12px;
+  animation: animate 8s linear infinite;
+
+  transition: 0.25s;
+}
+
+ legend:hover
+{
+  filter: blur(1px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+ input[type = "radio"]{
+  color: white;
+  background-color:  #fff;
+}
+textarea{
+  border-radius: 12px;
+  font-size: 16px;
+  height: auto;
+  width: auto;
+  text-align: left;
+  background: #000;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 22px;
+  border-color: #03a9f4;
+  padding: 17px 10px;
+  width: 200px;
+  transition: 0.25s;
+  text-align: center;
+}
+textarea:hover{
+  width: 280px;
+  border-color: #2ecc71;
+  columns: 40;
+  rows: 5;
+
+}
+
+audio
+{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 2px 2px 4px 0px #006773;
+-webkit-box-shadow:  2px 2px 4px 0px #006773;
+box-shadow: 3px 3px 4px 0px #03a9f4;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:7px 7px 7px 7px ;
+}
+
+.comment-box{
+  margin: 0px auto;
+  width: 845px;
+  padding: 20px;
+  margin-bottom: 4px;
+  background: linear-gradient(90deg, #03a9f4,#f441a5, #ffeb3b,#03a9f4);
+  background-size: 400%;
+  border-width: 4px;
+  border-radius: 12px;
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+  transition: 0.25s;
+  cursor: pointer;
+  font-family: sans-serif;
+
+
+}
+.comment-box:hover{
+    animation: animate 8s linear infinite;
+}
